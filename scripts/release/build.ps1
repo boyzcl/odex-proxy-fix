@@ -33,6 +33,7 @@ foreach ($Target in $Targets) {
   go build -ldflags "-X main.version=$Version -X main.commit=$Commit" -o (Join-Path $OutDir $Bin) ./cmd/codex-proxy
 
   Copy-Item (Join-Path $Root "README.md") (Join-Path $OutDir "README.md")
+  Copy-Item (Join-Path $Root "README.zh-CN.md") (Join-Path $OutDir "README.zh-CN.md")
   Copy-Item (Join-Path $Root "LICENSE") (Join-Path $OutDir "LICENSE")
   Copy-Item (Join-Path $Root "CODEX_PROXY_FIX_IMPLEMENTATION_BLUEPRINT.md") (Join-Path $OutDir "CODEX_PROXY_FIX_IMPLEMENTATION_BLUEPRINT.md")
   Copy-Item (Join-Path $Root "RELEASE_READINESS_PLAN.md") (Join-Path $OutDir "RELEASE_READINESS_PLAN.md")

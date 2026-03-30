@@ -28,6 +28,7 @@ build_target() {
     -o "${out_dir}/${bin_name}" ./cmd/codex-proxy
 
   cp "${ROOT_DIR}/README.md" "${out_dir}/README.md"
+  cp "${ROOT_DIR}/README.zh-CN.md" "${out_dir}/README.zh-CN.md"
   cp "${ROOT_DIR}/LICENSE" "${out_dir}/LICENSE"
   cp "${ROOT_DIR}/CODEX_PROXY_FIX_IMPLEMENTATION_BLUEPRINT.md" "${out_dir}/CODEX_PROXY_FIX_IMPLEMENTATION_BLUEPRINT.md"
   cp "${ROOT_DIR}/RELEASE_READINESS_PLAN.md" "${out_dir}/RELEASE_READINESS_PLAN.md"
