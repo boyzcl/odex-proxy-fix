@@ -213,6 +213,16 @@ mv codex-proxy /usr/local/bin/codex-proxy
 go build -o ./bin/codex-proxy ./cmd/codex-proxy
 ```
 
+## 本地验证
+
+提交前运行：
+
+```bash
+test -z "$(gofmt -l .)"
+go vet ./...
+go test ./...
+```
+
 ## 快速使用
 
 先诊断：
