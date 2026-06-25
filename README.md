@@ -207,6 +207,16 @@ mv codex-proxy /usr/local/bin/codex-proxy
 go build -o ./bin/codex-proxy ./cmd/codex-proxy
 ```
 
+## Local Verification
+
+Before submitting changes, run:
+
+```bash
+test -z "$(gofmt -l .)"
+go vet ./...
+go test ./...
+```
+
 ## Quick Start
 
 Run diagnosis first:
